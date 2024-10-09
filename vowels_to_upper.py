@@ -28,9 +28,9 @@ class VowelsToUpper:
     # define a function called vowelsToUpper that takes a string as input
     def vowelsToUpper(self):
         lower_case_vowels = ['a', 'e', 'i', 'o', 'u']
-        result = [character.upper() if character in lower_case_vowels else character for character in self.string]
+        result = ''.join([character.upper() if character in lower_case_vowels else character for character in self.string])
         return result
-
+    
 # make a user input for the string
 user_input_string = input("Enter a string: ")
 
