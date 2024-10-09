@@ -20,6 +20,7 @@ vowelsToUpper "hello hi bye" == "hEllO hI byE"
 '''
 
 # pseudocode
+
 # define a class called vowelsToUpper that takes a string as input
     # define a function called vowelsToUpper that takes a string as input
         # create a list of vowels
