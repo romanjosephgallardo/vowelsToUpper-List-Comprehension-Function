@@ -16,8 +16,8 @@ user_input_string = input("Enter a string: ")
 
 # Instantiate the class and call the method
 vowels_to_upper = VowelsToUpper(user_input_string)
-result = vowels_to_upper.vowelsToUpper()
+output = vowels_to_upper.vowelsToUpper()
 
 # Print the result
-print(result)
+print(output)
 
