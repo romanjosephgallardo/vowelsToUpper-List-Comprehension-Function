@@ -22,12 +22,22 @@ vowelsToUpper "hello hi bye" == "hEllO hI byE"
 # pseudocode
 
 # define a class called vowelsToUpper that takes a string as input
+class VowelsToUpper:
+    def __init__(self, string):
+        self.string = string
     # define a function called vowelsToUpper that takes a string as input
+    def vowelsToUpper(self):
         # create a list of vowels
+        vowels = ['a', 'e', 'i', 'o', 'u']
         # create a list of uppercase vowels
+        upper_vowels = ['A', 'E', 'I', 'O', 'U']
         # convert the string to a list of characters
+        string_list = list(self.string)
         # create a list comprehension that checks if the character is a vowel
-    # return a string with all vowels changed to their uppercase forms
+        if character in string_list in vowels:
+            # if the character is a vowel, convert it to uppercase
+            character = character.upper()
+            return character
 
 # make a user input for the string
 # instantiate the class and call the method
