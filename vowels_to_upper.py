@@ -27,20 +27,17 @@ class VowelsToUpper:
         self.string = string
     # define a function called vowelsToUpper that takes a string as input
     def vowelsToUpper(self):
-        # create a list of vowels
-        vowels = ['a', 'e', 'i', 'o', 'u']
-        # create a list of uppercase vowels
-        upper_vowels = ['A', 'E', 'I', 'O', 'U']
-        # convert the string to a list of characters
-        string_list = list(self.string)
-        # create a list comprehension that checks if the character is a vowel
-        if character in string_list in vowels:
-            # if the character is a vowel, convert it to uppercase
-            character = character.upper()
-            return character
+        lower_case_vowels = ['a', 'e', 'i', 'o', 'u']
+        result = [character.upper() if character in lower_case_vowels else character for character in self.string]
+        return result
 
 # make a user input for the string
-# instantiate the class and call the method
-# print the result
+user_input_string = input("Enter a string: ")
 
+# instantiate the class and call the method
+vowels_to_upper = VowelsToUpper(user_input_string)
+result = vowels_to_upper.vowelsToUpper()
+
+# print the result
+print(result)
 
